@@ -46,9 +46,9 @@ const About: React.FC = () => {
             Who I Am
           </motion.h2>
           
-          <motion.p variants={itemVariants} className="text-gray-700 mb-6 leading-relaxed">
-            I'm a passionate Computer Science undergraduate with a strong foundation in full-stack development, blockchain systems, and competitive programming. I enjoy building scalable, secure applications and diving deep into emerging technologies like decentralized systems and machine learning.
-          </motion.p>
+            <motion.p variants={itemVariants} className="text-gray-700 mb-6 leading-relaxed">
+            I'm a passionate Computer Science undergraduate with a strong foundation in full-stack development, specializing in backend systems, blockchain technologies, and competitive programming. I enjoy building scalable, secure applications and diving deep into emerging technologies like decentralized systems and machine learning.
+            </motion.p>
           
           <motion.p variants={itemVariants} className="text-gray-700 mb-8 leading-relaxed">
             Whether it's organizing tech events, contributing to open source, or jamming on stage as a band lead, I bring creativity and drive to everything I do.

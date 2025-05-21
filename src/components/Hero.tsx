@@ -39,7 +39,7 @@ const Hero: React.FC = () => {
               transition={{ delay: 0.4 }}
               className="text-2xl md:text-3xl text-gray-600 mb-6"
             >
-              Full-Stack Developer & Blockchain Enthusiast
+              Backend Specialist, Full-Stack Developer,  Blockchain Enthusiast
             </motion.h2>
             
             <motion.p
@@ -48,7 +48,7 @@ const Hero: React.FC = () => {
               transition={{ delay: 0.5 }}
               className="text-gray-700 mb-8 max-w-lg"
             >
-              I'm a passionate Computer Science undergraduate with expertise in full-stack development, blockchain systems, and competitive programming.
+              I'm a dedicated Computer Science undergraduate specializing in backend development, system architecture, and blockchain technologies, with a strong foundation in building scalable and efficient systems.
             </motion.p>
             
             <motion.div

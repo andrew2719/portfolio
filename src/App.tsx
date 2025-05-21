@@ -11,6 +11,7 @@ import Certifications from './components/Certifications';
 import Leadership from './components/Leadership';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Experience from './components/Experience';
 
 const App: React.FC = () => {
   const [activeSection, setActiveSection] = useState<string>('home');
@@ -45,6 +46,7 @@ const App: React.FC = () => {
       <main className="flex-grow">
         <Hero />
         <About />
+        <Experience />
         <Skills />
         <Projects />
         <Education />

@@ -59,23 +59,12 @@ const Skills: React.FC = () => {
     ],
   };
   
-  const SkillBar = ({ name, level }: { name: string; level: number }) => (
+  const SkillBar = ({ name }: { name: string }) => (
     <motion.div 
       variants={itemVariants}
-      className="mb-6"
+      className="mb-4"
     >
-      <div className="flex justify-between mb-1">
-        <span className="text-gray-700 font-medium">{name}</span>
-        <span className="text-gray-500 text-sm">{level}%</span>
-      </div>
-      <div className="w-full bg-gray-200 rounded-full h-2.5">
-        <motion.div 
-          className="bg-accent-950 h-2.5 rounded-full"
-          initial={{ width: 0 }}
-          animate={inView ? { width: `${level}%` } : { width: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-        ></motion.div>
-      </div>
+      <div className="text-gray-700 font-medium">{name}</div>
     </motion.div>
   );
   
@@ -111,51 +100,51 @@ const Skills: React.FC = () => {
           </motion.p>
           
           <motion.div 
-            ref={ref}
-            variants={containerVariants}
-            initial="hidden"
-            animate={inView ? "visible" : "hidden"}
-            className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8"
-          >
-            <motion.div variants={itemVariants}>
-              <h3 className="text-xl font-semibold text-primary-950 mb-6 pb-2 border-b border-gray-200">
-                Languages
-              </h3>
-              {skills.languages.map((skill) => (
-                <SkillBar key={skill.name} name={skill.name} level={skill.level} />
-              ))}
-            </motion.div>
-            
-            <motion.div variants={itemVariants}>
-              <h3 className="text-xl font-semibold text-primary-950 mb-6 pb-2 border-b border-gray-200">
-                Frameworks & Tools
-              </h3>
-              {skills.frameworks.map((skill) => (
-                <SkillBar key={skill.name} name={skill.name} level={skill.level} />
-              ))}
-            </motion.div>
-            
-            <motion.div variants={itemVariants}>
-              <h3 className="text-xl font-semibold text-primary-950 mb-6 pb-2 border-b border-gray-200">
-                Blockchain & Decentralized
-              </h3>
-              {skills.blockchain.map((skill) => (
-                <SkillBar key={skill.name} name={skill.name} level={skill.level} />
-              ))}
-            </motion.div>
-            
-            <motion.div variants={itemVariants}>
-              <h3 className="text-xl font-semibold text-primary-950 mb-6 pb-2 border-b border-gray-200">
-                Databases & Systems
-              </h3>
-              {skills.databases.map((skill) => (
-                <SkillBar key={skill.name} name={skill.name} level={skill.level} />
-              ))}
-              {skills.tools.map((skill) => (
-                <SkillBar key={skill.name} name={skill.name} level={skill.level} />
-              ))}
-            </motion.div>
-          </motion.div>
+  ref={ref}
+  variants={containerVariants}
+  initial="hidden"
+  animate={inView ? "visible" : "hidden"}
+  className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8"
+>
+  <motion.div variants={itemVariants}>
+    <h3 className="text-xl font-semibold text-primary-950 mb-6 pb-2 border-b border-gray-200">
+      Languages
+    </h3>
+    {skills.languages.map((skill) => (
+      <SkillBar key={skill.name} name={skill.name} />
+    ))}
+  </motion.div>
+  
+  <motion.div variants={itemVariants}>
+    <h3 className="text-xl font-semibold text-primary-950 mb-6 pb-2 border-b border-gray-200">
+      Frameworks & Tools
+    </h3>
+    {skills.frameworks.map((skill) => (
+      <SkillBar key={skill.name} name={skill.name} />
+    ))}
+  </motion.div>
+  
+  <motion.div variants={itemVariants}>
+    <h3 className="text-xl font-semibold text-primary-950 mb-6 pb-2 border-b border-gray-200">
+      Blockchain & Decentralized
+    </h3>
+    {skills.blockchain.map((skill) => (
+      <SkillBar key={skill.name} name={skill.name} />
+    ))}
+  </motion.div>
+  
+  <motion.div variants={itemVariants}>
+    <h3 className="text-xl font-semibold text-primary-950 mb-6 pb-2 border-b border-gray-200">
+      Databases & Systems
+    </h3>
+    {skills.databases.map((skill) => (
+      <SkillBar key={skill.name} name={skill.name} />
+    ))}
+    {skills.tools.map((skill) => (
+      <SkillBar key={skill.name} name={skill.name} />
+    ))}
+  </motion.div>
+</motion.div>
         </div>
       </div>
     </section>

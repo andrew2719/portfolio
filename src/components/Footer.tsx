@@ -52,8 +52,13 @@ const Footer: React.FC = () => {
             <h3 className="text-lg font-semibold mb-4">Contact</h3>
             <ul className="space-y-2 text-gray-300">
               <li>Andhra Pradesh, India</li>
-              <li>+91 9182018920</li>
+              
               <li>andrewblaze2719@gmail.com</li>
+                <li>
+                <a href="https://www.linkedin.com/in/andrew-blaze/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-accent-950 transition-colors">
+                  LinkedIn
+                </a>
+                </li>
             </ul>
           </div>
         </div>

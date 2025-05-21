@@ -30,12 +30,6 @@ const Contact: React.FC = () => {
   
   const contactInfo = [
     {
-      icon: <Phone size={20} className="text-primary-950" />,
-      label: "Phone",
-      value: "+91 9182018920",
-      link: "tel:+919182018920",
-    },
-    {
       icon: <Mail size={20} className="text-primary-950" />,
       label: "Email",
       value: "andrewblaze2719@gmail.com",
@@ -64,10 +58,16 @@ const Contact: React.FC = () => {
     },
     {
       icon: <Globe size={20} className="text-primary-950" />,
-      label: "Portfolio",
-      value: "andrewblaze.simple.ink",
-      link: "https://andrewblaze.simple.ink",
+      label: "Instagram",
+      value: "andrew.pitta_music",
+      link: "https://www.instagram.com/andrew.pitta_music",
     },
+    // {
+    //   icon: <Globe size={20} className="text-primary-950" />,
+    //   label: "Portfolio",
+    //   value: "andrewblaze.simple.ink",
+    //   link: "https://andrewblaze.simple.ink",
+    // },
   ];
   
   return (
