@@ -25,6 +25,24 @@ const Projects: React.FC = () => {
   const projects: Project[] = [
     {
       id: 1,
+      title: 'Footwear Classification Using Pretrained CNN Models with Deep Neural Network',
+      description: 'A deep learning project for classifying footwear into categories using pretrained CNN models and a custom DNN.',
+      technologies: ['Python', 'NumPy', 'Matplotlib', 'scikit-learn', 'DNN', 'CNN', 'DL'],
+      githubUrl: 'https://www.kaggle.com/code/andrewblaze/shoe-sandal-boot',
+      imageUrl: 'https://images.pexels.com/photos/19090/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      year: '2025',
+    },
+    {
+      id: 6,
+      title: 'Machine Unlearning Using Iterative Pruning and Knowledge Distillation',
+      description: 'A project focused on machine unlearning techniques leveraging iterative pruning and knowledge distillation for secure and efficient model updates.',
+      technologies: ['Python', 'PyTorch', 'ML', 'CNN', 'Vision Transformers'],
+      githubUrl: 'https://www.kaggle.com/code/andrewblaze/all-archs',
+      imageUrl: 'https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      year: '2025',
+    },
+    {
+      id: 2,
       title: 'Organ Donation Registry',
       description: 'Decentralized donation platform with FastAPI backend and Streamlit frontend that ensures transparent, immutable on-chain donation tracking.',
       technologies: ['Blockchain', 'FastAPI', 'Streamlit', 'Python', 'Solidity'],
@@ -33,7 +51,7 @@ const Projects: React.FC = () => {
       year: '2024',
     },
     {
-      id: 2,
+      id: 3,
       title: 'Blockchain Voting System',
       description: 'Implemented a blockchain-based voting system using ZK-Rollups and Merkle Trees with bitmap-based voter verification.',
       technologies: ['Blockchain', 'ZK-Rollups', 'Merkle Trees', 'Bitmap', 'Solidity', 'Python'],
@@ -42,21 +60,21 @@ const Projects: React.FC = () => {
       year: '2024',
     },
     {
-      id: 3,
-      title: 'IPFS Simulation',
-      description: 'Simulated IPFS architecture and automated its behavior via scripting for distributed file storage systems.',
-      technologies: ['Python', 'TCP/IP', 'Distributed Systems'],
-      githubUrl: 'https://github.com/andrew2719/DFS.git',
-      imageUrl: 'https://images.pexels.com/photos/1089438/pexels-photo-1089438.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-      year: '2023',
-    },
-    {
-      id: 4,
+      id: 5,
       title: 'Online Learning Platform',
       description: 'Full-stack web app for course creation, user authentication, and content management with a clean UI.',
       technologies: ['Django', 'HTML', 'CSS', 'JavaScript', 'SQLite'],
       githubUrl: 'https://github.com/andrew2719/Module_banks/tree/main/3-1/WT/testing_3',
       imageUrl: 'https://images.pexels.com/photos/5905710/pexels-photo-5905710.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      year: '2023',
+    },
+    {
+      id: 4,
+      title: 'IPFS Simulation',
+      description: 'Simulated IPFS architecture and automated its behavior via scripting for distributed file storage systems.',
+      technologies: ['Python', 'TCP/IP', 'Distributed Systems'],
+      githubUrl: 'https://github.com/andrew2719/DFS.git',
+      imageUrl: 'https://images.pexels.com/photos/1089438/pexels-photo-1089438.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
       year: '2023',
     },
     // {
@@ -72,8 +90,10 @@ const Projects: React.FC = () => {
   
   const filters = [
     { id: 'all', name: 'All Projects' },
+    { id: "AI/ML/DL", name: "AI/ML/DL" },
     { id: 'blockchain', name: 'Blockchain' },
     { id: 'web', name: 'Web Development' },
+    { id: '2025', name: '2025' },
     { id: '2024', name: '2024' },
     { id: '2023', name: '2023' },
   ];
@@ -85,6 +105,9 @@ const Projects: React.FC = () => {
     );
     if (activeFilter === 'web') return project.technologies.some(tech => 
       ['HTML', 'CSS', 'JavaScript', 'React', 'Django', 'FastAPI'].includes(tech)
+    );
+    if (activeFilter === 'AI/ML/DL') return project.technologies.some(tech => 
+      ['AI', 'ML', 'DL','CNN', 'TensorFlow', 'PyTorch'].includes(tech)
     );
     return project.year === activeFilter;
   });
