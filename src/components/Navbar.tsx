@@ -90,7 +90,7 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
               </a>
             ))}
             <a 
-              href="/RESUME.pdf" 
+              href="https://drive.google.com/file/d/1dtSmvN7_49cIKIF2jrQ6YhnuNZZ83m3Y/view?usp=sharing" 
               target="_blank" 
               rel="noopener noreferrer"
               className="btn btn-outline text-center mt-4"
