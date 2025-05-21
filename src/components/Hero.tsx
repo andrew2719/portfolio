@@ -60,8 +60,17 @@ const Hero: React.FC = () => {
               <a href="#projects" className="btn btn-primary">
                 View Projects
               </a>
-              <a href="#contact" className="btn btn-outline">
+              <a href="#contact" className="btn btn-primary">
                 Contact Me
+              </a>
+
+              <a
+                href="https://drive.google.com/file/d/1dtSmvN7_49cIKIF2jrQ6YhnuNZZ83m3Y/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-primary"
+              >
+                View Resume
               </a>
             </motion.div>
             

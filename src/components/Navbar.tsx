@@ -29,7 +29,6 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
     { name: 'About', href: '#about' },
     { name: 'Experience', href: '#experience' },
     { name: 'Skills', href: '#skills' },
-   
     { name: 'Projects', href: '#projects' },
     { name: 'Education', href: '#education' },
     { name: 'Contact', href: '#contact' },
@@ -55,14 +54,14 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
               {link.name}
             </a>
           ))}
-          <a 
+          {/* <a 
             href="/andrew_resume.pdf" 
             target="_blank" 
             rel="noopener noreferrer"
             className="btn btn-outline"
           >
             Resume
-          </a>
+          </a> */}
         </nav>
 
         {/* Mobile Menu Button */}
@@ -89,14 +88,14 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
                 {link.name}
               </a>
             ))}
-            <a 
+            {/* <a 
               href="/andrew_resume.pdf" 
               target="_blank" 
               rel="noopener noreferrer"
               className="btn btn-outline text-center mt-4"
             >
               Resume
-            </a>
+            </a> */}
           </div>
         </nav>
       )}

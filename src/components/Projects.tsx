@@ -59,15 +59,15 @@ const Projects: React.FC = () => {
       imageUrl: 'https://images.pexels.com/photos/5905710/pexels-photo-5905710.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
       year: '2023',
     },
-    {
-      id: 5,
-      title: 'BLEND NFT',
-      description: 'A platform for creating and trading unique digital assets using blockchain technology.',
-      technologies: ['Blockchain', 'NFT', 'Smart Contracts', 'Web3'],
-      githubUrl: 'https://github.com/andrew2719/BLEND_NFT.git',
-      imageUrl: 'https://images.pexels.com/photos/8370752/pexels-photo-8370752.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-      year: '2023',
-    },
+    // {
+    //   id: 5,
+    //   title: 'BLEND NFT',
+    //   description: 'A platform for creating and trading unique digital assets using blockchain technology.',
+    //   technologies: ['Blockchain', 'NFT', 'Smart Contracts', 'Web3'],
+    //   githubUrl: 'https://github.com/andrew2719/BLEND_NFT.git',
+    //   imageUrl: 'https://images.pexels.com/photos/8370752/pexels-photo-8370752.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    //   year: '2023',
+    // },
   ];
   
   const filters = [
